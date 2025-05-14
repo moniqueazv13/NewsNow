@@ -57,6 +57,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation ("com.github.KwabenBerko:News-API-Java:1.0.2")
-    implementation("io.coil-kt.coil3:coil-compose:3.2.0")
+    implementation (libs.news.api.java)
 }
