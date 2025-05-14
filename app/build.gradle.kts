@@ -58,4 +58,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation (libs.news.api.java)
+    implementation(libs.koin.androidx.compose)
 }

@@ -16,9 +16,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.kwabenaberko.newsapilib.models.Article
+import org.koin.androidx.compose.koinViewModel
 
 @Composable
-fun HomeScreen(newsViewModel: NewsViewModel) {
+fun HomeScreen(newsViewModel: NewsViewModel = koinViewModel()) {
     val articles by newsViewModel.articles.observeAsState(emptyList())
 
     Column(modifier = Modifier.fillMaxSize()) {
