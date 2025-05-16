@@ -1,4 +1,4 @@
-package br.com.newsnow
+package br.com.newsnow.presentation.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import br.com.newsnow.presentation.viewmodel.NewsViewModel
 import com.kwabenaberko.newsapilib.models.Article
 import org.koin.androidx.compose.koinViewModel
 

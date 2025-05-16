@@ -14,7 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
-import br.com.newsnow.ui.theme.NewsNowTheme
+import br.com.newsnow.presentation.screen.HomeScreen
+import br.com.newsnow.presentation.ui.theme.NewsNowTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

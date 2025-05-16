@@ -1,4 +1,4 @@
-package br.com.newsnow.ui.theme
+package br.com.newsnow.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

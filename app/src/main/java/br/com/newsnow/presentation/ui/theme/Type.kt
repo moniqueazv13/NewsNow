@@ -1,4 +1,4 @@
-package br.com.newsnow.ui.theme
+package br.com.newsnow.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

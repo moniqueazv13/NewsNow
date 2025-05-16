@@ -1,6 +1,7 @@
 package br.com.newsnow
 
 import android.app.Application
+import br.com.newsnow.presentation.di.applicationModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.loadKoinModules

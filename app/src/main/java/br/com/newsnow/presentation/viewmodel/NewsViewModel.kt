@@ -1,9 +1,10 @@
-package br.com.newsnow
+package br.com.newsnow.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.com.newsnow.Constant.QUERY
+import br.com.newsnow.presentation.utils.Constant
+import br.com.newsnow.presentation.utils.Constant.QUERY
 import com.kwabenaberko.newsapilib.NewsApiClient
 import com.kwabenaberko.newsapilib.NewsApiClient.ArticlesResponseCallback
 import com.kwabenaberko.newsapilib.models.Article
