@@ -15,7 +15,6 @@
 - Entre outras.
 
 ### Melhorias futuras ✔️
-- Segunda UI com detalhes.
 - Testes unitários
 - Modularização
 </br>
