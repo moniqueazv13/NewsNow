@@ -20,4 +20,4 @@
 - Modularização
 </br>
 
-![image](https://github.com/user-attachments/assets/a10daf13-19a0-4e00-9d37-477f6460f395)
+<img src="https://github.com/user-attachments/assets/ea18faf8-c70e-4117-bb6d-0adbba6ecfb1" width="300"/> <img src="https://github.com/user-attachments/assets/40d894a2-0d95-4370-b565-3f28b6675855" width="300"/>
