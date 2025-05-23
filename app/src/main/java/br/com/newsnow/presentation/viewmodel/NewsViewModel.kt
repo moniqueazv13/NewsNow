@@ -20,12 +20,12 @@ class NewsViewModel : ViewModel() {
         fetchNews()
     }
 
-    private fun fetchNews() {
+     fun fetchNews(category: String? = QUERY) {
         val newsApiClient = NewsApiClient(Constant.API_KEY)
 
         newsApiClient.getEverything(
             EverythingRequest.Builder()
-                .q(QUERY)
+                .q(category)
                 .build(),
             object : ArticlesResponseCallback {
                 override fun onSuccess(response: ArticleResponse) {

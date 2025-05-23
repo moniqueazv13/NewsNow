@@ -14,7 +14,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
+import br.com.newsnow.presentation.HomePageScreen
+import br.com.newsnow.presentation.NewsArticlesScreen
 import br.com.newsnow.presentation.screen.HomeScreen
+import br.com.newsnow.presentation.screen.NewsArticleScreen
 import br.com.newsnow.presentation.ui.theme.NewsNowTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,9 +29,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+
+            val navController = rememberNavController()
+
             NewsNowTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
+                    Column(modifier = Modifier
+                        .padding(innerPadding)
+                        .fillMaxSize()) {
                         Text(
                             text = "News Now",
                             modifier = Modifier.align(Alignment.CenterHorizontally),
@@ -32,7 +44,15 @@ class MainActivity : ComponentActivity() {
                             fontSize = 25.sp,
                             fontFamily = FontFamily.SansSerif
                         )
-                        HomeScreen()
+                        NavHost(navController = navController, startDestination = HomePageScreen) {
+                            composable<HomePageScreen> {
+                                HomeScreen(navController = navController)
+                            }
+                            composable<NewsArticlesScreen> {
+                                val args = it.toRoute<NewsArticlesScreen>()
+                                NewsArticleScreen(args.url)
+                            }
+                        }
                     }
                 }
             }
